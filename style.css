@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f6f6;
+}
+
+.logo_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.logo{
+    font-family: Georgia;
+    font-size: 30px;
+}
+.nav_section{
+    background-color: rgb(253, 107, 39);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    transition: 0.1s;
+}
+.nav_section ul{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.nav_section ul li{
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px 10px;
+    border-bottom: 2px solid rgb(253, 107, 39);
+}
+.nav_section ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav_section ul li:hover{
+    border-bottom: 2px solid;
+    
+}
+.media_box{
+    /* border: 1px solid; */
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+/* Header section */
+.container, .container_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+.header_text_box h1{
+    font-size: 30px;
+    font-family: arial;
+}
+.header_text_box button{
+    background-color: rgb(253, 107, 39);
+    border: none;
+    padding: 20px 40px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.header_img_box{
+    width: 50%;
+    height: 58vh;
+}
+.header_img_box img{
+    width: 100%;
+    height: 100%;
+}
+/* Collection section*/
+.section_title{
+    width: 220px;
+    border-bottom: 3px solid;
+    margin: 20px 70px;
+    font-weight: bold;
+}
+.single_card{
+    border: 1px solid #d1d0d0;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.single_card img{
+    width: 250px;
+    height: 300px;
+}
+.single_card p{
+    margin-top: 15px ;
+    font-weight: bold;
+}
+/* Offer section */
+.offer_section{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/350/522/small/modern-room-office-black-background-ai-generated-photo.jpg');
+    background-repeat: none;
+    background-color: rgb(226, 148, 148);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 65px 0;
+    color: white;
+}
+.offer_section button{
+    background-color: rgb(253, 107, 39);
+    border: none;
+    padding: 20px 40px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.Girls-collection{
+    display: flex;
+    justify-content: space-between;
+
+}
+.girls_single-collection img{
+    width: 350px;
+    height: 400px;
+}
+.girls_single-collection{
+    border: 1px solid #d1d0d0;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.girls_single-collection p{
+    font-weight: bold;
+    margin-top: 15px;
+}
+/* --Blog-- */
+.single_blog img{
+    width: 170px;
+    height: 220px;
+}
+.single_blog h1{
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.single_blog p{
+    font-family: arial;
+    font-size:15px ;
+}
+/* Footer */
+footer{
+    height: 150px;
+    width: 100%;
+    background-color:rgb(5, 5, 5) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer p{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* mobile responsive */
+.toggle_menu{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 700px){
+    .logo_box{
+        padding: 10px 15px;
+    }
+    .toggle_menu{
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .search_bar{
+        display: none;
+    }
+
+    .nav_section{
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .nav_section ul{
+        padding: 0 10px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+    .nav_section ul li{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .media_box{
+        padding: 15px 10px;
+        /* border: 1px solid; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    }
+    .media_box i{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .container{
+        margin: 75px 0 30px;
+        display: flex;
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_main{
+        display: flex;
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_img_box{
+        width: 100%;
+    }
+    .section_title{
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .single_card, .single_blog, .girls_single-collection {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .single_card img, .girls_single-collection img{
+        width: 100%;
+    }
+    .single_blog img{
+        width: 100%;
+        min-height: 350px;
+        border-radius: 15px;
+    }
+}
